@@ -1,7 +1,7 @@
 # Immortal.bat (My First Batch Project)
 Batch script which was created for educational and entertaiment purposes only. The script provides interesting tricks with modern Windows (particularly Windows 8.1 and newer), but is also capable of damaging files, registry data etc.
 
-![Main Menu](https://github.com/MalwareStudio/Immortal/blob/main/images/Menu_1.1.1.png)
+![](https://github.com/MalwareStudio/Immortal/blob/main/images/Menu_1.1.1.png)
 
 Check out the video about Immortal.bat 👉 [Full Demonstration](https://www.youtube.com/watch?v=p6LZ-45KQ60)
 
@@ -35,16 +35,20 @@ The harmless level.
 It hide files, randomly launch applications, open random websites and lastly it restart the system via shutdown command.
 The console window is visible.
 
-![]()
+![](https://github.com/MalwareStudio/Immortal/blob/main/images/casual_1.1.2.png)
 
 ### Normal 😊
 It is a still harmless level, but some of its features can cause problems to users who does not understand basic stuff in registry and basically anyone who lacks basic knowledge in Windows.
 Fist it disable Task Manager then Registry Editor, it will also disable UAC protection. Lastly it remove the wallpaper and write a message to the user.
 The console window is visible.
 
+![](https://github.com/MalwareStudio/Immortal/blob/main/images/normal_1.1.3.png)
+
 ### Annoying 😐
 This level can do mess in the system. However, it does not do any kind of damage so it is still classified as a harmless level.
 After execution it change a lot of file icons, rename username, create welcome message, swap the mouse inputs and it disable the Task Manager, Registry Editor and UAC protection. Pressing any key will lead to reboot.
+
+![](https://github.com/MalwareStudio/Immortal/blob/main/images/annoying_1.1.2.png)
 
 **1st Payload**
 After reboot, the Annoying Level will activate first payload.
@@ -74,6 +78,8 @@ After execution the script will take ownership of some non critical system files
 Keyboard is going to be also changed. Some keys can even open applications.
 This level have also date timed payloads such as 02/11 | 11.2 - Shell Overwritter, 04/01 | 1.4 - Delete Classes. The default payload without date timed changes is File Overwritter. Date timed payloads and default can happen in the last payload aka 4th one.
 The console window is visible, but it will change after reboot.
+
+![](https://github.com/MalwareStudio/Immortal/blob/main/images/harsh_1.1.5.png)
 
 **1st Payload**
 When the message box apper with the text `"Lets get some friends"` it will immediatelly start to creating 1000 accounts with random gibberish names and passwords. Luckely your account will not be affected.
@@ -108,6 +114,8 @@ When you execute this level, you are paused by its menu. Before you press any ke
 01/01 | 1.1 - File Injection
 There is also a default payload - Font Corruption
 
+![](https://github.com/MalwareStudio/Immortal/blob/main/images/cruel_1.1.9.png)
+
 > [!WARNING]
 > Because these payloads will cause a serious damage to your devide, you might not be able to return to the script UI.
 
@@ -136,6 +144,8 @@ Instead of running for example notepad.exe you will get batch script with random
 This level does not require any date time changes. When you press any key it will try to take ownership of all files in all drives and delete them.
 It will also try to delete all registry data.
 Lastly it will delete `C:\Recovery` directory. Because recovery directory contains necessary files to launch the `Automatic repair`, Windows will not be able to even try to repair the system.
+
+![](https://github.com/MalwareStudio/Immortal/blob/main/images/deadly_recovery_1.1.14.png)
 
 ## Fun facts
 It took me 1 month to finish this project. The reason why it took me so long to finish it was because of lack of knowledge about errors and their solutions.
