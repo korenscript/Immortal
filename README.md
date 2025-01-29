@@ -129,4 +129,4 @@ It will also try to delete all registry data.
 Lastly it will delete `C:\Recovery` directory. Because recovery directory contains necessary files to launch the `Automatic repair`, Windows will not be able to even try to repair the system.
 
 ## Fun facts
-It took me 1 month to finish this project. The reason why it took me so long to finish it is because of lack of knowledge about errors.
+It took me 1 month to finish this project. The reason why it took me so long to finish it was because of lack of knowledge about errors and their solutions.
