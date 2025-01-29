@@ -1,5 +1,5 @@
 # Immortal (My First Batch Project)
-Batch script which was created for educational and entertaiment purposes only. The script provides interesting tricks with modern Windows (particularly Windows 8.1 and newer), but is also capable of damaging files, registry data ect.
+Batch script which was created for educational and entertaiment purposes only. The script provides interesting tricks with modern Windows (particularly Windows 8.1 and newer), but is also capable of damaging files, registry data etc.
 
 ## This was a challenge!
 
@@ -21,7 +21,7 @@ Would I recommend batch script to you? Yes, but be prepared for a lot of errors 
 
 When you launch Immortal.bat, the first thing that you are going to experience is UAC promt. That is because this script need a administrator privileges to change and remove important files. Without these rights, the script would not do much. Then the script will show you the main menu with all stages (in other words levels) which you can try. Meanwhile, the script already dropped some of its files in "C:\Immortal" directory and it created bunch of registry files in "HKEY_LOCAL_MACHINE\SOFTWARE\Immortal". These files are very important for the script functionality. Also, it chnage the registry value "Shell" in order to start up along with explorer.exe.
 
-### Levels
+## Levels
 
 ### Casual 😇
 The harmless level.
@@ -41,6 +41,10 @@ After execution it change a lot of file icons, rename username, create welcome m
 After reboot, the Annoying Level will activate first payload.
 In this payload, the script will try to create a gibberish files on all drives and its subdirectories.
 
+> [!NOTE]
+> If you want to launch any of these payloads then you need to restart the computer.
+> After every restart you will come across to another payload.
+
 **2nd Payload** (not shown in the video)
 When this payload is launched, random gibberish message boxes will be displayed. Styles and buttons of the message boxes can appear randomly.
 
@@ -56,8 +60,29 @@ When you try to reboot the system again, you will return to the main menu.
 The console window is visible, but it will change after reboot.
 
 ### Harsh 🙁
+This level can actually damage some data.
+After execution the script will take ownership of some non critical system files such as Device Manager, Task Manager and so on... Then it will delete these files.
+Keyboard is going to be also changed. Some keys can even open applications.
+This level have also date timed payloads such as 02/11 | 11.2 - Shell Overwritter, 04/01 | 1.4 - Delete Classes. The default payload without date timed changes is File Overwritter. Date timed payloads and default can happen in the last payload aka 4th one.
+The console window is visible, but it will change after reboot.
 
+**1st Payload**
+When the message box apper with the text "Lets get some friends" it will immediatelly start to creating 1000 accounts with random gibberish names and passwords. Luckely your account will not be affected.
 
+> [!WARNING]
+> Sometimes accounts can appear right after the payload starts, but it is not always like that.
+> If you cannot see any changes then you need to restart the computer.
+
+**2nd Payload**
+Another payload will create new drives. That can explain the message "Its time to expand".
+But before that, the script will convert the primary disk into dynamic disk. By doing this, it can create as many drives as it wants.
+
+**3rd Payload**
+This payload just disconnects the internet connection. Nothing else to say about this one ...
+
+**4th Payload - (default) File Overwritter**
+It will search for all conected drives and then it will overwrite all files within these drives and their subdirectories with message "OVERWRITTEN BY IMMORTAL.BAT".
+You might even lose files in the share folder so be careful!
 
 ### Cruel 😡
 
