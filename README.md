@@ -13,12 +13,15 @@ And just with that, I started learning the batch script.
 ## What's the purpose?
 
 A lot of people in our community view batch script as a "scripting language for skidders". This might be true due to the fact how easy is to code in the batch script. However, I am not a script kiddie anymore and I want to prove you that even with the batch script you can do pretty amazing stuff in the Windows.
+
 So what's the purpose of this? Just to show you what batch script can be capable of!
 
 ## My opinion on Batch Script
 
 Well, I have to say that learning this script did not take long becuase batch is very low level scripting language. However, I ran into a lot of problems with syntax, spacing issues and escaping. So, it was not clean process as I thought it will be.
+
 For instance: When I was trying to escape keyword "do" inside if statement it did not let me do that. No metter how hard you try to escape "do" keyword inside if statement or for loop, you will always fail.
+
 Would I recommend batch script to you? Yes, but be prepared for a lot of errors and stay calm (not like me :D) because there is always reason why the problem occured.
 
 ## How this script works?
