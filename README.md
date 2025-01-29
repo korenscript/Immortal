@@ -1,4 +1,4 @@
-# Immortal (My First Batch Project)
+# Immortal.bat (My First Batch Project)
 Batch script which was created for educational and entertaiment purposes only. The script provides interesting tricks with modern Windows (particularly Windows 8.1 and newer), but is also capable of damaging files, registry data etc.
 
 ## This was a challenge!
@@ -19,7 +19,7 @@ Would I recommend batch script to you? Yes, but be prepared for a lot of errors 
 
 ## How this script works?
 
-When you launch Immortal.bat, the first thing that you are going to experience is UAC promt. That is because this script need a administrator privileges to change and remove important files. Without these rights, the script would not do much. Then the script will show you the main menu with all stages (in other words levels) which you can try. Meanwhile, the script already dropped some of its files in "C:\Immortal" directory and it created bunch of registry files in "HKEY_LOCAL_MACHINE\SOFTWARE\Immortal". These files are very important for the script functionality. Also, it chnage the registry value "Shell" in order to start up along with explorer.exe.
+When you launch Immortal.bat, the first thing that you are going to experience is UAC promt. That is because this script need a administrator privileges to change and remove important files. Without these rights, the script would not do much. Then the script will show you the main menu with all stages (in other words levels) which you can try. Meanwhile, the script already dropped some of its files in `C:\Immortal` directory and it created bunch of registry files in `HKEY_LOCAL_MACHINE\SOFTWARE\Immortal`. These files are very important for the script functionality. Also, it chnage the registry value "Shell" in order to start up along with explorer.exe.
 
 ## Levels
 
@@ -50,10 +50,10 @@ When this payload is launched, random gibberish message boxes will be displayed.
 
 **3rd Payload**
 This payload is about downloading files from hardcoded download links. When the file is downloaded, it will try to open it.
-All the files will be stored inside "C:\Download" directory.
+All the files will be stored inside `C:\Download` directory.
 
 **4th Payload**
-It will launch two scripts "spam.bat" and "letmeransomeaps.bat". This payload will slowdown the system because it will attempt to launch all files from system32 directory. "spam.bat" only display command "dir C:\ /s" with different variations of colors.
+It will launch two scripts `spam.bat` and `letmeransomeaps.bat`. This payload will slowdown the system because it will attempt to launch all files from system32 directory. `spam.bat` only display command `dir C:\ /s` with different variations of colors.
 
 When you try to reboot the system again, you will return to the main menu.
 
@@ -67,28 +67,28 @@ This level have also date timed payloads such as 02/11 | 11.2 - Shell Overwritte
 The console window is visible, but it will change after reboot.
 
 **1st Payload**
-When the message box apper with the text "Lets get some friends" it will immediatelly start to creating 1000 accounts with random gibberish names and passwords. Luckely your account will not be affected.
+When the message box apper with the text `"Lets get some friends"` it will immediatelly start to creating 1000 accounts with random gibberish names and passwords. Luckely your account will not be affected.
 
 > [!WARNING]
 > Sometimes accounts can appear right after the payload starts, but it is not always like that.
 > If you cannot see any changes then you need to restart the computer.
 
 **2nd Payload**
-Another payload will create new drives. That can explain the message "Its time to expand".
+Another payload will create new drives. That can explain the message `"Its time to expand"`.
 But before that, the script will convert the primary disk into dynamic disk. By doing this, it can create as many drives as it wants.
 
 **3rd Payload**
 This payload just disconnects the internet connection. Nothing else to say about this one ...
 
 **4th Payload - (default) File Overwritter**
-It will search for all conected drives and then it will overwrite all files within these drives and their subdirectories with message "OVERWRITTEN BY IMMORTAL.BAT".
+It will search for all conected drives and then it will overwrite all files within these drives and their subdirectories with message `"OVERWRITTEN BY IMMORTAL.BAT"`.
 You might even lose files in the share folder so be careful!
 
 **4th Payload - 02/11 | 11.2 - Shell Overwritter**
-This payload will just replace explorer.exe to epilepsy.bat so after reboot instead of seeing your desktop with all icons, you are going to see batch script which changes its colors randomly and says "HACKED BY IMMORTAL.BAT" multiple times.
+This payload will just replace `explorer.exe` to `epilepsy.bat` so after reboot instead of seeing your desktop with all icons, you are going to see batch script which changes its colors randomly and says `"HACKED BY IMMORTAL.BAT"` multiple times.
 
 **4th Payload - 04/01 | 1.4 - Delete Classes**
-It will try to delete all classes from registry which are exactly located in "HKEY_LOCAL_MACHINE\SOFTWARE\Classes" or "HKEY_CLASSES_ROOT". By deleting these classes you will not be able to open any application.
+It will try to delete all classes from registry which are exactly located in `HKEY_LOCAL_MACHINE\SOFTWARE\Classes` or `HKEY_CLASSES_ROOT`. By deleting these classes you will not be able to open any application.
 After reboot you are going to see a black screen with some error messages.
 
 ### Cruel 😡
@@ -113,19 +113,20 @@ When you launch this payload it will try to take ownership of all files in the s
 After reboot you will not be able to boot into your system again.
 
 **12/25 | 25.12 - Image File Execution Option**
-This payload is fully based on registry. It will create a new key called "dwm.exe" inside "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options". After that it will create a new string value called "debugger" with string "notepad.exe". After reboot it will try to open dwm.exe from notepad.exe which will cause some problems with Windows UI.
+This payload is fully based on registry. It will create a new key called `dwm.exe` inside `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options`. After that it will create a new string value called `debugger` with string `notepad.exe`. After reboot it will try to open `dwm.exe` from `notepad.exe` which will cause some problems with Windows UI.
 
 > [!NOTE]
-> Dwm.exe is ...
+> Desktop Window Manager or DWM.exe is the system manager that generates every element visible on a PC/laptop. In addition, it is responsible for stimulating all visual effects in Windows menus, transparent components, wallpapers, themes, thumbnails and
+> system animations.
 
 **01/01 | 1.1 - File Injection**
-Another based registry payload. This one will hook all files in "HKEY_LOCAL_MACHINE\SOFTWARE\Classes" by modifying default string value located in "command" key.
-Instead of running for example notepad.exe you will get batch script with random colors and it will say "INJECTED BY IMMORTAL.BAT".
+Another based registry payload. This one will hook all files in `HKEY_LOCAL_MACHINE\SOFTWARE\Classes` by modifying default string value located in `command` key.
+Instead of running for example notepad.exe you will get batch script with random colors and it will say `"INJECTED BY IMMORTAL.BAT"`.
 
 ### Deadly 😈
 This level does not require any date time changes. When you press any key it will try to take ownership of all files in all drives and delete them.
 It will also try to delete all registry data.
-Lastly it will delete "C:\Recovery" directory. Because recovery directory contains necessary files to launch the "Automatic repair", Windows will not be able to even try to repair the system.
+Lastly it will delete `C:\Recovery` directory. Because recovery directory contains necessary files to launch the `Automatic repair`, Windows will not be able to even try to repair the system.
 
 ## Fun facts
 It took me 1 month to finish this project. The reason why it took me so long to finish it is because of lack of knowledge about errors.
