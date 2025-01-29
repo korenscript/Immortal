@@ -84,6 +84,48 @@ This payload just disconnects the internet connection. Nothing else to say about
 It will search for all conected drives and then it will overwrite all files within these drives and their subdirectories with message "OVERWRITTEN BY IMMORTAL.BAT".
 You might even lose files in the share folder so be careful!
 
+**4th Payload - 02/11 | 11.2 - Shell Overwritter**
+This payload will just replace explorer.exe to epilepsy.bat so after reboot instead of seeing your desktop with all icons, you are going to see batch script which changes its colors randomly and says "HACKED BY IMMORTAL.BAT" multiple times.
+
+**4th Payload - 04/01 | 1.4 - Delete Classes**
+It will try to delete all classes from registry which are exactly located in "HKEY_LOCAL_MACHINE\SOFTWARE\Classes" or "HKEY_CLASSES_ROOT". By deleting these classes you will not be able to open any application.
+After reboot you are going to see a black screen with some error messages.
+
 ### Cruel 😡
+This level causes a serious problems on Windows.
+When you execute this level, you are paused by its menu. Before you press any key you can decide which type of payload you want to execute.
+03/30 | 30.3 - System32 Corruption
+12/25 | 25.12 - Image File Execution Option
+01/01 | 1.1 - File Injection
+There is also a default payload - Font Corruption
+
+> [!WARNING]
+> Because these payloads will cause a serious damage to your devide, you might not be able to return to the script UI.
+
+The console window is visible, but it will change after reboot.
+
+**(default) Font Corruption**
+This payload will try to delete all fonts from the registry. Fonts will not be deleted directly, only their registry data.
+After reboot you are going to experience gibberish text across the screen and Windows will eventually crash.
+
+**03/30 | 30.3 - System32 Corruption**
+When you launch this payload it will try to take ownership of all files in the system32 folder and then it will try to erase them all.
+After reboot you will not be able to boot into your system again.
+
+**12/25 | 25.12 - Image File Execution Option**
+This payload is fully based on registry. It will create a new key called "dwm.exe" inside "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options". After that it will create a new string value called "debugger" with string "notepad.exe". After reboot it will try to open dwm.exe from notepad.exe which will cause some problems with Windows UI.
+
+> [!NOTE]
+> Dwm.exe is ...
+
+**01/01 | 1.1 - File Injection**
+Another based registry payload. This one will hook all files in "HKEY_LOCAL_MACHINE\SOFTWARE\Classes" by modifying default string value located in "command" key.
+Instead of running for example notepad.exe you will get batch script with random colors and it will say "INJECTED BY IMMORTAL.BAT".
 
 ### Deadly 😈
+This level does not require any date time changes. When you press any key it will try to take ownership of all files in all drives and delete them.
+It will also try to delete all registry data.
+Lastly it will delete "C:\Recovery" directory. Because recovery directory contains necessary files to launch the "Automatic repair", Windows will not be able to even try to repair the system.
+
+## Fun facts
+It took me 1 month to finish this project. The reason why it took me so long to finish it is because of lack of knowledge about errors.
