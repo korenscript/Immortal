@@ -3,7 +3,7 @@ Batch script which was created for educational and entertaiment purposes only. T
 
 ![Main Menu](https://github.com/MalwareStudio/Immortal/blob/main/images/Menu_1.1.1.png)
 
-Here you can see what Immortal.bat can do to your system 👉 [Full Demonstration](https://www.youtube.com/watch?v=p6LZ-45KQ60)
+Check out the video about Immortal.bat 👉 [Full Demonstration](https://www.youtube.com/watch?v=p6LZ-45KQ60)
 
 ## This was a challenge!
 
