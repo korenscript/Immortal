@@ -66,6 +66,7 @@ In this payload, the script will try to create a gibberish files on all drives a
 
 > [!NOTE]
 > If you want to launch any of these payloads then you need to restart the computer.
+> 
 > After every restart you will come across to another payload.
 
 **2nd Payload** (not shown in the video)
@@ -103,6 +104,7 @@ When the message box apper with the text `"Lets get some friends"` it will immed
 
 > [!WARNING]
 > Sometimes accounts can appear right after the payload starts, but it is not always like that.
+> 
 > If you cannot see any changes then you need to restart the computer.
 
 **2nd Payload**
