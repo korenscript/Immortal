@@ -1,3 +1,8 @@
+> [!WARNING]
+> This project was built for Windows 8.1.
+> I am not sure if you can run this script properly on newer operating systems.
+> This warning message will be removed/changed when I be sure.
+
 # Immortal.bat (My First Batch Project)
 Batch script which was created for educational and entertaiment purposes only. The script provides interesting tricks with modern Windows (particularly Windows 8.1 and newer), but is also capable of damaging files, registry data etc.
 
