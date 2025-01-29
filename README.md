@@ -35,6 +35,8 @@ The harmless level.
 It hide files, randomly launch applications, open random websites and lastly it restart the system via shutdown command.
 The console window is visible.
 
+![]()
+
 ### Normal 😊
 It is a still harmless level, but some of its features can cause problems to users who does not understand basic stuff in registry and basically anyone who lacks basic knowledge in Windows.
 Fist it disable Task Manager then Registry Editor, it will also disable UAC protection. Lastly it remove the wallpaper and write a message to the user.
