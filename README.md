@@ -13,7 +13,7 @@ Batch script which was created for educational and entertaiment purposes only. T
 Check out the video about Immortal.bat 👉 [Full Demonstration](https://www.youtube.com/watch?v=p6LZ-45KQ60)
 
 ## Watch out!
-There is a Operating System Detection so do not be surprised why the script is not working on Windows 7 or older.
+There is an Operating System Detection so do not be surprised why the script is not working on Windows 7 or older.
 
 ![](https://github.com/MalwareStudio/Immortal/blob/main/images/OsDetection.png)
 
