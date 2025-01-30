@@ -41,14 +41,18 @@ Meanwhile, the script already dropped some of its files in `C:\Immortal` directo
 
 ### Casual 😇
 The harmless level.
+
 It hide files, randomly launch applications, open random websites and lastly it restart the system via shutdown command.
+
 The console window is visible.
 
 ![](https://github.com/MalwareStudio/Immortal/blob/main/images/casual_1.1.2.png)
 
 ### Normal 😊
 It is a still harmless level, but some of its features can cause problems to users who does not understand basic stuff in registry and basically anyone who lacks basic knowledge in Windows.
+
 Fist it disable Task Manager then Registry Editor, it will also disable UAC protection. Lastly it remove the wallpaper and write a message to the user.
+
 The console window is visible.
 
 ![](https://github.com/MalwareStudio/Immortal/blob/main/images/normal_1.1.3.png)
@@ -60,6 +64,7 @@ The console window is visible.
 
 ### Annoying 😐
 This level can do mess in the system. However, it does not do any kind of damage so it is still classified as a harmless level.
+
 After execution it change a lot of file icons, rename username, create welcome message, swap the mouse inputs and it disable the Task Manager, Registry Editor and UAC protection. Pressing any key will lead to reboot.
 
 ![](https://github.com/MalwareStudio/Immortal/blob/main/images/annoying_1.1.2.png)
@@ -93,6 +98,7 @@ The console window is visible, but it will change after reboot.
 
 ### Harsh 🙁
 This level can actually damage some data.
+
 After execution the script will take ownership of some non critical system files such as Device Manager, Task Manager and so on... Then it will delete these files.
 
 Keyboard is going to be also changed. Some keys can even open applications.
@@ -140,6 +146,7 @@ After reboot you are going to see a black screen with some error messages.
 
 ### Cruel 😡
 This level causes a serious problems on Windows.
+
 When you execute this level, you are paused by its menu. Before you press any key you can decide which type of payload you want to execute.
 
 03/30 | 30.3 - System32 Corruption
