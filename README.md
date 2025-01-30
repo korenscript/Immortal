@@ -53,6 +53,11 @@ The console window is visible.
 
 ![](https://github.com/MalwareStudio/Immortal/blob/main/images/normal_1.1.3.png)
 
+> [!WARNING]
+> The `msg` command is not part of the Windows Home Edition.
+>
+> So if you are running Immortal on Windows 10/11 Home it will not show up, on the other hand, both Pro Editions have this command.
+
 ### Annoying 😐
 This level can do mess in the system. However, it does not do any kind of damage so it is still classified as a harmless level.
 After execution it change a lot of file icons, rename username, create welcome message, swap the mouse inputs and it disable the Task Manager, Registry Editor and UAC protection. Pressing any key will lead to reboot.
@@ -186,4 +191,6 @@ Lastly it will delete `C:\Recovery` directory. Because recovery directory contai
 ![](https://github.com/MalwareStudio/Immortal/blob/main/images/deadly_recovery_1.1.14.png)
 
 ## Fun facts
-It took me 1 month to finish this project. The reason why it took me so long to finish it was because of lack of knowledge about errors and their solutions.
+It took me 1 month to finish this project.
+
+The code is hardcoded because I was working on some payloads separately outside of the script. If you are wondering why, it is because when the code grew more and more it got much more confusing.
