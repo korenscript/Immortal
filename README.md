@@ -1,21 +1,22 @@
-> [!WARNING]
-> This project was built for Windows 8.1.
-> 
-> I am not sure if you can run this script properly on newer operating systems.
-> 
-> This warning message will be removed/changed when I be sure.
+> [WARNING]
+> This was originally made for Windows 8.1.
+>
+> This is not by me, please visit the original repository. This is just a fork.
 
-# Immortal.bat (My First Batch Project)
-Batch script which was created for educational and entertaiment purposes only. The script provides interesting tricks with modern Windows (particularly Windows 8.1 and newer), but is also capable of damaging files, registry data etc.
+# Mortal. Originally by [MalwareStudio](https://github.com/MalwareStudio/)
+I have look at Immortal and I really liked it, So I wanted to fork it and try to improve it!
 
 ![](https://github.com/MalwareStudio/Immortal/blob/main/images/Menu_1.1.1.png)
 
-Check out the video about Immortal.bat 👉 [Full Demonstration](https://www.youtube.com/watch?v=p6LZ-45KQ60)
+Check out the video explaining the original Immortal 👉 [Full Demonstration](https://www.youtube.com/watch?v=p6LZ-45KQ60)
 
 ## Watch out!
 There is an Operating System Detection so do not be surprised why the script is not working on Windows 7 or older.
 
 ![](https://github.com/MalwareStudio/Immortal/blob/main/images/OsDetection.png)
+
+> Under here is now messages by the original author.
+
 
 ## This was a challenge!
 
